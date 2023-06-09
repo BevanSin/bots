@@ -7,10 +7,10 @@ from datetime import datetime
 TOKEN = '<discordbottoken>'
 
 # JSON file path
-JSON_FILE_PATH = r'JSON SAVE FILE LOCATION'
+JSON_FILE_PATH = r'<JSON SAVE FILE LOCATION>'
 
 # Discord channel ID
-CHANNEL_ID = CHANNELIDNUMBER
+CHANNEL_ID = <CHANNELIDNUMBER>
 
 # Time interval for updating the leaderboard (in seconds)
 UPDATE_INTERVAL = 60
