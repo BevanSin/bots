@@ -65,7 +65,7 @@ async def on_ready():
         await asyncio.sleep(UPDATE_INTERVAL)
 
         # Read the JSON file
-        with open(JSON_FILE_PATH, 'r') as json_file:
+        with open(JSON_FILE_PATH, 'r', encoding='utf8') as json_file:
             data = json.load(json_file)
 
         # Extract player scores from the JSON data
