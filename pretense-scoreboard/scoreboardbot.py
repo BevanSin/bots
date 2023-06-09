@@ -3,17 +3,15 @@ import json
 import asyncio
 from datetime import datetime
 
-# Discord bot token
-TOKEN = '<discordbottoken>'
+# Read the configuration file
+with open('config.json', 'r', encoding='utf8') as config_file:
+    config = json.load(config_file)
 
-# JSON file path
-JSON_FILE_PATH = r'<JSON SAVE FILE LOCATION>'
-
-# Discord channel ID
-CHANNEL_ID = <CHANNELIDNUMBER>
-
-# Time interval for updating the leaderboard (in seconds)
-UPDATE_INTERVAL = 60
+# Access the variables from the config dictionary
+TOKEN = config['TOKEN']
+JSON_FILE_PATH = config['JSON_FILE_PATH']
+CHANNEL_ID = config['CHANNEL_ID']
+UPDATE_INTERVAL = config['UPDATE_INTERVAL']
 
 # Player ranks based on score
 ranks = {
