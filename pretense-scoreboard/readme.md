@@ -26,6 +26,18 @@ run `python scoreboardbot.py`
 
 You should see the pilot, their XP and Rank in your discord channel.
 
+## Update the bot
+
+By default the original git pull will drop the files into the \bots directory.  To update to the latest version, stop the bot if its running.
+
+Open a cmd prompt and change directory to the \bots folder and type:
+
+`git pull`
+
+this will grab the latest code and overwrite your local copy
+
+Start the bot again using the run command.
+
 ## Ranks
 
 This is a static table within the python at the moment.  If the mission creator updates these this will need to be modified.  I'll do my best to keep it up to date :)
